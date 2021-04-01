@@ -1,0 +1,59 @@
+{
+    "name": "mrgoodbytes8667/mock-generator",
+    "type": "project",
+    "description": "A Symfony single line application/command for generating mock files",
+    "license": "CC-BY-NC-4.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.0",
+        "ext-json": "*",
+        "doctrine/annotations": "^1.12",
+        "doctrine/collections": "^1.6",
+        "mrgoodbytes8667/command-bundle": "^1.0",
+        "mrgoodbytes8667/discord-response-bundle": "^0.8@BETA",
+        "mrgoodbytes8667/http-client-common": "^0.1.1",
+        "mrgoodbytes8667/test-common": "^0.0.8",
+        "mrgoodbytes8667/test-common-faker": "^0.2.5",
+        "mrgoodbytes8667/test-discord-faker": ">=0.0.5",
+        "symfony/console": "^5.2",
+        "symfony/http-client": "^5.2",
+        "symfony/property-access": "^5.2",
+        "symfony/property-info": "^5.2",
+        "symfony/serializer": "^5.2",
+        "symfony/string": "^5.2",
+        "symfony/validator": "^5.2",
+        "symfony/var-dumper": "^5.2"
+    },
+    "authors": [
+        {
+            "name": "MrGoodBytes",
+            "email": "bytes@goodbytes.live"
+        }
+    ],
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "suggest": {
+        "symfony/security-bundle": ""
+    },
+    "conflict": {
+        "doctrine/annotations": "<1.11.1",
+        "doctrine/cache": "<1.10.2",
+        "doctrine/collections": "<1.6.7",
+        "doctrine/event-manager": "<1.1.1",
+        "doctrine/inflector": "<1.4.3",
+        "doctrine/lexer": "<1.2.1",
+        "doctrine/persistence": "<2.1.0",
+        "fakerphp/faker": "<1.14",
+        "mrgoodbytes8667/response-bundle": "<1.0.1",
+        "symfony/framework-bundle": "<5.2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bytes\\MockGenerator\\": "src/",
+            "Bytes\\MockGenerator\\Tests\\": "Tests/"
+        }
+    }
+}
